@@ -18,16 +18,21 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
-  color: blue;
+  color: cornflowerblue;
 }
 .button {
   position: absolute;
   width: 90%;
+  height: 10%;
   left:5%;
   bottom: 16%;
   text-align: center;
   opacity: 0;
   transition: opacity .35s ease;
+  color: white;
+  background-color: blue;
+  font-weight: bolder;
+  border-radius: 5px;
 }
 .container:hover .button {
   opacity: 1;

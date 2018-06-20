@@ -1,6 +1,9 @@
-<div>
+
+
+<div class="backgroud">
+<div >
   <H1 class="list_header">My List </H1>
-  <hr>
+
   <div *ngFor="let item of list_data" class="container">
     <img src={{item.img}} alt="" />
     <button class="button" name="{{item.id}}" (click)="remove($event)"> REMOVE </button>
@@ -9,9 +12,9 @@
   <div style="clear:both"></div>
 </div>
 
-<div>
+<div >
   <H1 class="recommendation_header">Recommendation</H1>
-  <hr >
+
   <div *ngFor="let item of remm_data" class="container">
     <img src={{item.img}} alt="" />
     <button class="button" name="{{item.id}}" (click)="add($event)"> ADD </button>
@@ -19,5 +22,5 @@
   </div>
   <div style="clear:both"></div>
 </div>
-
+</div>
 

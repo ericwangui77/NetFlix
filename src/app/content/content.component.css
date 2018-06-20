@@ -1,3 +1,4 @@
+
 .list_header {
  color: red;
 }
@@ -11,14 +12,19 @@
   float: left;
   padding-top:10px;
   margin:5px;
-  border: 1px solid #ccc;
+  border: 2px solid white;
   text-align:center;
 }
+
+.backgroud{
+  background-color: black;
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
-  color: cornflowerblue;
+  color: white;
 }
 .button {
   position: absolute;

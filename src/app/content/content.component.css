@@ -1,0 +1,35 @@
+.list_header {
+ color: red;
+}
+.recommendation_header {
+  color: red;
+}
+.container {
+  position: relative;
+  width: 180px;
+  height: 280px;
+  float: left;
+  padding-top:10px;
+  margin:5px;
+  border: 1px solid #ccc;
+  text-align:center;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: blue;
+}
+.button {
+  position: absolute;
+  width: 90%;
+  left:5%;
+  bottom: 16%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.container:hover .button {
+  opacity: 1;
+}
+

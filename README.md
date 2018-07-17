@@ -1,10 +1,14 @@
 #. Notice: 
-1. The original data you provide to me is webp image. But safari can not support webp image format, that is why the application has problem in the safari browser. If we use jpg or png instead of the webp image, then it will run well on safari.
+ The original data you provide to me is webp image. But safari can not support webp image format, that is why the application has problem in the safari browser. If we use jpg or png instead of the webp image, then it will run well on safari.
 
-2. I modified the file  ./src/karma.conf.js to karma.conf.jss because it can not pass Gmail checking.
-   (It does not affect the operation)
-   
-   
+
+#. By the feedback, I updated the Netflix assignment include： 
+1. merge the code into a component for reuse.
+2. remove redundant code.
+3. list all of the steps in the Readme.md
+
+
+ 
 **_By the following steps, you can run the assignment:_**
 
 #. Node.s

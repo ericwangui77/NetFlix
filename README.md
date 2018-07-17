@@ -5,7 +5,7 @@
    (It does not affect the operation)
    
    
-`**_By the following steps, you can run the assignment:_**`
+**_By the following steps, you can run the assignment:_**
 
 #. Node.s
 install node.js the version 8.11.1 
@@ -27,13 +27,6 @@ go into the unzipped file direction
 open browser and input address:     http://localhost:4200/, then you can see the UI.
 
 
-# Safari
-Safari browser can not support .webp image file, so you should import webpjs in the head tag
-<script type="text/javascript" src="js/webpjs-0.0.2.min.js"></script>
-
-or you can install webp
 
 
-I modified the file  ./src/karma.conf.js to karma.conf.jss because it can not pass Gmail checking.
-   (It does not affect the operation)
    

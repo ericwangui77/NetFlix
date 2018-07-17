@@ -1,37 +1,27 @@
-
-.list_header {
- color: red;
+.backgroud{
+  height: 1080px;
+  width: 1920px;
+  background-color: black;
 }
-.recommendation_header {
+.listHeader {
   color: red;
 }
 .container {
-  position: relative;
   width: 180px;
   height: 280px;
-  float: left;
+  margin: 5px;
   padding-top:10px;
-  margin:5px;
   border: 2px solid white;
+  position: relative;
+  float: left;
   text-align:center;
 }
-
-.backgroud{
-  background-color: black;
-}
-
-.title {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: white;
-}
 .button {
-  position: absolute;
   width: 90%;
   height: 10%;
   left:5%;
   bottom: 16%;
+  position: absolute;
   text-align: center;
   opacity: 0;
   transition: opacity .35s ease;
@@ -43,4 +33,9 @@
 .container:hover .button {
   opacity: 1;
 }
-
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+}

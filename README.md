@@ -1,27 +1,39 @@
-# Netflix
+#. Notice: 
+1. The original data you provide to me is webp image. But safari can not support webp image format, that is why the application has problem in the safari browser. If we use jpg or png instead of the webp image, then it will run well on safari.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+2. I modified the file  ./src/karma.conf.js to karma.conf.jss because it can not pass Gmail checking.
+   (It does not affect the operation)
+   
+   
+`**_By the following steps, you can run the assignment:_**`
 
-## Development server
+#. Node.s
+install node.js the version 8.11.1 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#. Unzip package
+unzip the Netflix-EricWang.zip
 
-## Code scaffolding
+#. CD direction 
+go into the unzipped file direction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#. npm install
+ run terminal and input command:   npm install
 
-## Build
+#. ng serve
+ after the 4 step finished, then input command: ng serve
+ wait for it until the program compile success
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#.  http://localhost:4200/
+open browser and input address:     http://localhost:4200/, then you can see the UI.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Safari
+Safari browser can not support .webp image file, so you should import webpjs in the head tag
+<script type="text/javascript" src="js/webpjs-0.0.2.min.js"></script>
 
-## Running end-to-end tests
+or you can install webp
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+I modified the file  ./src/karma.conf.js to karma.conf.jss because it can not pass Gmail checking.
+   (It does not affect the operation)
+   

@@ -1,26 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
+
 export class ContentComponent implements OnInit {
-  json_str = '{"mylist" : [{"title": "Futurama","id": 1,"img": "http://cdn1.nflximg.net/webp/7621/3787621.webp"},' +
-    '{"title": "The Interview","id": 2,"img": "http://cdn1.nflximg.net/webp/1381/11971381.webp"},' +
-    '{"title": "Gilmore Girls","id": 3,"img": "http://cdn1.nflximg.net/webp/7451/11317451.webp"}],' +
-    '"recommendations":[{"title": "Family Guy","id": 4,"img": "http://cdn5.nflximg.net/webp/5815/2515815.webp"},' +
-    '{"title": "The Croods","id": 5,"img": "http://cdn3.nflximg.net/webp/2353/3862353.webp"},' +
-    '{"title": "Friends","id": 6,"img": "http://cdn0.nflximg.net/webp/3200/9163200.webp"}]}';
+  dataUrl = 'assets/mock.json';
+  data = Object;
   mylist = [];
   recommandlist = [];
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
+
   ngOnInit() {
-    this.mylist = JSON.parse(this.json_str).mylist;
-    this.recommandlist = JSON.parse(this.json_str).recommendations;
+    this.getData();
   }
+
+  getData() {
+    this.http.get(this.dataUrl).subscribe(data => {
+     const json_str = JSON.stringify(data);
+     this.mylist = JSON.parse(json_str).mylist;
+     this.recommandlist = JSON.parse(json_str).recommendations;
+    });
+  }
+
   add(event) {
     this.DeleteFromRecommand(event.target.name);
   }

@@ -40,8 +40,3 @@ go into the unzipped file direction (NetFlix-master)
 #.  http://localhost:4200/
 open browser and input address:     http://localhost:4200/, then you can see the UI.
 
-
-#. remark
-I modified the file  ./src/karma.conf.js to karma.conf.jss because it can not pass Gmail checking.
-   (It does not affect the operation)
-   

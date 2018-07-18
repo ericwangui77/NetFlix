@@ -25,10 +25,10 @@ II. imports: [
 install node.js the version 8.11.1 
 
 #. Unzip package
-unzip the Netflix-EricWang.zip
+unzip the Netflix.zip
 
 #. CD direction 
-go into the unzipped file direction
+go into the unzipped file direction (NetFlix-master)
 
 #. npm install
  run terminal and input command:   npm install
